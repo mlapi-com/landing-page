@@ -1,69 +1,66 @@
 ---
-// @ts-ignore
-import { Icon } from "astro-icon";
 
-const features = [
+import { Icon } from "astro-icon";
+import ContentSection from "@components/content-section.astro";
+import type { FeatureItem } from "~/types";
+
+const features: Array<FeatureItem> = [
   {
-    title: "Bring Your Own Framework",
+    title: "Share",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Test your prototype early in the development process with users from outside your development team.",
+    icon: "mdi:handshake",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Review",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Read the conversations that users have with your assistant, instead of focusing entirely on top-level metrics.",
+    icon: "mdi:feather",
   },
   {
-    title: "On-Demand Components",
+    title: "Annotate",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Convert the messages that users send to your assistant into training examples.",
+    icon: "mdi:directions-fork",
   },
   {
-    title: "Broad Integration",
+    title: "Test",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Make testing an automated step, every time you deploy new changes.",
+    icon: "mdi:graph",
   },
   {
-    title: "SEO Enabled",
+    title: "Track",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Measure meaningful metrics, so you can understand what’s working and not working.",
+    icon: "mdi:search-web",
   },
   {
-    title: "Community",
+    title: "Fix",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Reduce failures over time by making adjustments based on analyzing your assistant’s interactions.",
+    icon: "mdi:account-group",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
-
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
-        </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+<div class="mt-20 w-full ">
+<ContentSection title="Conversation-Driven Development" id="features" >
+  <Fragment slot="lead">
+    Conversation-driven development is the process of listening to your users and using those insights to improve your AI assistant.  
+  </Fragment>
+  <ul class="grid max-w-6xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+    {
+      features.map(({ title, description, icon }) => (
+        <li class="flex flex-col items-center gap-4 border border-default bg-offset p-6 hover:bg-slate-100">
+          <div class="h-16 w-16 rounded-full border-2 border-current p-3 ">
+            <Icon name={icon} />
+          </div>
+          <p class="text-center font-extrabold text-xl">{title}</p>
+          <p class="text-center text-offset text-sm">{description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</ContentSection>
 </div>
