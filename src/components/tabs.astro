@@ -1,4 +1,4 @@
-<div class="w-full bg-white border border-gray-300 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 hidden md:block">
+<div class="w-full bg-white border border-gray-300 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 hidden md:block mb-28 mt-28">
   <div class="sm:hidden">
       <label for="tabs" class="sr-only">Select tab</label>
       <select id="tabs" class="bg-gray-500 border-10 border-b border-gray-200 text-gray-1000 text-sm rounded-t-lg focus:ring-blue-800 focus:border-blue-800 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
@@ -10,16 +10,16 @@
   </div>
   <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
       <li class="w-full">
-          <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Object Detection</button>
+          <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Object Detection</button>
       </li>
       <li class="w-full">
-          <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Object Segmentation</button>
+          <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Object Segmentation</button>
       </li>
       <li class="w-full">
-          <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">OCR</button>
+          <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">OCR</button>
       </li>
       <li class="w-full">
-          <button id="text-sentiment-tab" data-tabs-target="#sentiment" type="button" role="tab" aria-controls="sentiment" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600">Text Classification</button>
+          <button id="text-sentiment-tab" data-tabs-target="#sentiment" type="button" role="tab" aria-controls="sentiment" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Text Classification</button>
       </li>
   </ul>
   <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600 flex-6">
@@ -40,7 +40,7 @@
                   </div>
 
                   <div class="pl-1 pt-1 h-auto text-green-200 font-mono text-lg bg-black" id="console">
-                      <p class="pb-1">curl -X POST https://eugenesiow-remove-bg.hf.space/+/api/predict/ -H 'Content- \
+                      <p class="pb-1 text-sky-600">curl -X POST https://eugenesiow-remove-bg.hf.space/+/api/predict/ -H 'Content- \
                           <br>Type: application/json' -d &#39;&#123;&ldquo;data&rdquo;&#58;&#91; \ <br> &ldquo;data&#58;image/jpeg&#59;base64&rdquo;&#93;&#125;&#39;
                       </p>
                       <p class="pb-1"></p>
