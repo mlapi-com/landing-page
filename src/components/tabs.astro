@@ -1,31 +1,27 @@
-<div class="w-full bg-white border border-gray-300 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 hidden md:block mb-28 mt-28">
+<div class="w-fit bg-white border border-gray-300 rounded-lg shadow-xl dark:bg-gray-800 dark:border-gray-700 hidden md:block mb-28 mx-auto">
   <div class="sm:hidden">
       <label for="tabs" class="sr-only">Select tab</label>
       <select id="tabs" class="bg-gray-500 border-10 border-b border-gray-200 text-gray-1000 text-sm rounded-t-lg focus:ring-blue-800 focus:border-blue-800 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option>Object Detection</option>
-          <option>Object Segmentation</option>
-          <option>OCR</option>
-          <option>Text Classification</option>
+          <option>Python</option>
+          <option>Javascript</option>
+          <option>cURL</option>
       </select>
   </div>
   <ul class="hidden text-sm font-medium text-center text-gray-500 divide-x divide-gray-200 rounded-lg sm:flex dark:divide-gray-600 dark:text-gray-400" id="fullWidthTab" data-tabs-toggle="#fullWidthTabContent" role="tablist">
       <li class="w-full">
-          <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Object Detection</button>
+          <button id="stats-tab" data-tabs-target="#stats" type="button" role="tab" aria-controls="stats" aria-selected="true" class="inline-block w-full p-4 rounded-tl-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Python</button>
       </li>
       <li class="w-full">
-          <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Object Segmentation</button>
+          <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about" aria-selected="false" class="inline-block w-full p-4 bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Javascript</button>
       </li>
       <li class="w-full">
-          <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">OCR</button>
-      </li>
-      <li class="w-full">
-          <button id="text-sentiment-tab" data-tabs-target="#sentiment" type="button" role="tab" aria-controls="sentiment" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">Text Classification</button>
+          <button id="faq-tab" data-tabs-target="#faq" type="button" role="tab" aria-controls="faq" aria-selected="false" class="inline-block w-full p-4 rounded-tr-lg bg-gray-50 hover:bg-gray-200 focus:outline-none dark:bg-gray-700 dark:hover:bg-gray-600 text-lg">cURL</button>
       </li>
   </ul>
   <div id="fullWidthTabContent" class="border-t border-gray-200 dark:border-gray-600 flex-6">
       <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="stats" role="tabpanel" aria-labelledby="stats-tab">
           <!-- component -->
-          <div class="w-3/4 mx-auto">
+          <!-- <div class="w-3/4 mx-auto">
               <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
                   <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
                       <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
@@ -46,12 +42,30 @@
                       <p class="pb-1"></p>
                   </div>
               </div>
-          </div>
+          </div> -->
+
+          <div class="mockup-code w-3/2 mx-auto">
+                <pre data-prefix="1" class="text-warning"><code>import request, json</code></pre> 
+                <pre data-prefix="2" class="text-success"><code>headers = &#10100; </code></pre>
+                <pre data-prefix="3"><code></code>    "content-Type": "application/json"</pre>
+                <pre data-prefix="4" class="text-success"><code>&#10101;</code></pre>
+                <pre data-prefix="5" class="text-success"><code>data = json.dumps(&#10100;</code></pre>
+                <pre data-prefix="6"><code></code>    "api_key": "API key, str",</pre>
+                <pre data-prefix="7"><code></code>    "text": "Text to synthesize, str",</pre>
+                <pre data-prefix="8"><code></code>    "voices": "Voice name, str",</pre>
+                <pre data-prefix="9"><code></code>    "target_file": "Cloud Storage URL for Target Voice, optional URL"</pre>
+                <pre data-prefix="10" class="text-success"><code>&#10101;</code></pre>
+                <pre data-prefix="11" class="text-success"><code>response = requests.post(</code></pre>
+                <pre data-prefix="12"><code>    'https://metavoicexyz--tts-app.modal.run',</code></pre>
+                <pre data-prefix="13"><code>    headers=headers, data=data</code></pre>
+                <pre data-prefix="14" class="text-success"><code>)</code></pre>
+                <pre data-prefix="15" class="text-success"><code>print(response.content)</code></pre>
+            </div>
       </div>
 
       <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel" aria-labelledby="about-tab">
           <!-- component -->
-          <div class="w-3/4 mx-auto">
+          <!-- <div class="w-3/4 mx-auto">
               <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
                   <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
                       <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
@@ -72,7 +86,13 @@
                   <p>Object Segmentation</p>
                   </div>
               </div>
-          </div>
+          </div> -->
+
+          <div class="mockup-code w-3/2 mx-auto">
+            <pre data-prefix="$"><code>npm i daisyui</code></pre> 
+            <pre data-prefix=">" class="text-warning"><code>installing...</code></pre> 
+            <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+        </div>
 
 
       </div>
@@ -80,7 +100,7 @@
       <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="faq" role="tabpanel" aria-labelledby="faq-tab">
           <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
               <!-- component -->
-              <div class="w-3/4 mx-auto">
+              <!-- <div class="w-3/4 mx-auto">
                   <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
                       <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
                           <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
@@ -103,38 +123,15 @@
                       </p>
                       </div>
                   </div>
-              </div>
+              </div> -->
 
-          </div>
-      </div>
-
-      <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="sentiment" role="tabpanel" aria-labelledby="text-sentiment-tab">
-        <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-800 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
-            <!-- component -->
-            <div class="w-3/4 mx-auto">
-                <div class="w-full shadow-2xl subpixel-antialiased rounded h-64 bg-black border-black mx-auto">
-                    <div class="flex items-center h-6 rounded-t bg-gray-100 border-b border-gray-500 text-center text-black" id="headerTerminal">
-                        <div class="flex ml-2 items-center text-center border-red-900 bg-red-500 shadow-inner rounded-full w-3 h-3" id="closebtn">
-                        </div>
-                        <div class="ml-2 border-yellow-900 bg-yellow-500 shadow-inner rounded-full w-3 h-3" id="minbtn">
-                        </div>
-                        <div class="ml-2 border-green-900 bg-green-500 shadow-inner rounded-full w-3 h-3" id="maxbtn">
-                        </div>
-                        <div class="mx-auto pr-16" id="terminaltitle">
-                            <p class="text-center text-sm">Terminal</p>
-                        </div>
-
-                    </div>
-                    <div class="pl-1 pt-1 h-auto  text-green-200 font-mono text-lg bg-black" id="console">
-                      <p class="pb-1">curl -X POST https://eugenesiow-remove-bg.hf.space/+/api/predict/ -H 'Content- \
-                        <br>Type: application/json' -d &#39;&#123;&ldquo;data&rdquo;&#58;&#91; \ <br> &ldquo;data&#58;image/jpeg&#59;base64&rdquo;&#93;&#125;&#39;
-                    </p>
-                    <p>Text Classification</p>
-                    </div>
-                </div>
+              <div class="mockup-code w-3/2 mx-auto">
+                <pre data-prefix="$"><code>npm i daisyui</code></pre> 
+                <pre data-prefix=">" class="text-warning"><code>installing...</code></pre> 
+                <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
             </div>
-
-        </div>
+            
+          </div>
     </div>
   </div>
 </div>

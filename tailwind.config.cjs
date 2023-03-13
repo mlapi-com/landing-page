@@ -14,6 +14,17 @@ module.exports = {
   },
   plugins: [
     require("@tailwindcss/typography"),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require("daisyui")
   ],
+  daisyui: {
+    styled: true,
+    themes: false,
+    base: true,
+    utils: true,
+    logs: true,
+    rtl: false,
+    prefix: "",
+    darkTheme: "dark",
+  },
 };
