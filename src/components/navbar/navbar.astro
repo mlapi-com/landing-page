@@ -5,25 +5,19 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  
-  {
-    title: "Home",
-    path: "/#"
-  },
   // {
   //   title: "Models",
   //   path: "/models"
   // },
-  // {
-  //   title: "Use Cases",
-  //   path: "#",
-  //   children: [
-  //     { title: "Security", path: "#" },
-  //     { title: "Manufacturing", path: "#" },
-  //     { title: "Transportation", path: "#" },
-  //     { title: "Customer Service", path: "#" },
-  //   ],
-  // },
+  {
+    title: "Use Cases",
+    path: "#",
+    children: [
+      { title: "ChatGPT", path: "#" },
+      { title: "Dataset Generation", path: "#" },
+      { title: "E-Learning", path: "#" },
+    ],
+  },
   {
     title: "Pricing",
     path: "/pricing",
@@ -44,11 +38,11 @@ const menuitems = [
 ---
 
 <Container>
-  <header class="flex flex-col lg:flex-row justify-between items-center prose-xl sticky">
+  <header class="flex flex-col lg:flex-row justify-between items-center prose-xl sticky pt-6 lg:pt-0">
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-extrabold text-slate-800 text-2xl">MLAPI</span><span
+          ><span class="font-extrabold text-slate-800 text-4xl">Voicees</span><span
             class="text-slate-500"></span
           >
         </a>

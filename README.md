@@ -1,4 +1,4 @@
-# MLAPI.co website 
+# Clonevoices website 
 
 
 ### Pagespeed Score
@@ -11,9 +11,9 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/mlapi-co/mlapi.co.git myProjectName
+git clone https://github.com/mlapi-co/clonevoices-website.git myProjectName
 # or
-git clone https://github.com/mlapi-co/mlapi.co.git .
+git clone https://github.com/mlapi-co/clonevoices-website.git .
 ```
 
 The `.` will clone it to the current directory so make sure you are inside your project folder first.
@@ -50,39 +50,3 @@ yarn build
 pnpm preview
 pnpm build
 ```
-
-We recommend using [pnpm](https://pnpm.io/) to save disk space on your computer.
-
-### Other Commands
-
-```bash
-pnpm astro ...
-pnpm astro add
-pnpm astro --help
-```
-
-## Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── ...
-├── src/
-│   ├── components/
-│   │   └── ...
-│   ├── layouts/
-│   │   └── ...
-│   └── pages/
-│       └── ...
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## TailwindCSS
-
-TailwindCSS is already configured in this repo, so you can start using it without any installation.

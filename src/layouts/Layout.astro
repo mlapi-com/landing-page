@@ -26,8 +26,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "MLAPI"
-  : "MLAPI | Free to use ML APIs";
+  ? title + " | " + "Voicees"
+  : "Voicees | AI Powered Text to Voice API";
 ---
 
 <!DOCTYPE html>
@@ -45,7 +45,7 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Conversational AI Platform"
+      description="AI Powered Text to Voice API"
       canonical={canonicalURL}
       twitter={{
         creator: "@surjithctly",
@@ -56,7 +56,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `MlApi`,
+          title: `Clonevoices`,
           image: resolvedImageWithDomain,
         },
         image: {
