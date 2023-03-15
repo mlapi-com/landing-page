@@ -89,9 +89,27 @@
           </div> -->
 
           <div class="mockup-code w-3/2 mx-auto">
-            <pre data-prefix="$"><code>npm i daisyui</code></pre> 
-            <pre data-prefix=">" class="text-warning"><code>installing...</code></pre> 
-            <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+            <pre data-prefix="1" class="text-success"><code>const data = &#10100;</code></pre> 
+            <pre data-prefix="2"><code>    "api_key": "API key, str",</code></pre>
+            <pre data-prefix="3"><code>    "text": "Text to synthesize, str",</code></pre>
+            <pre data-prefix="4"><code>    "voices": "Voice name, str",</code></pre>
+            <pre data-prefix="5"><code>    "target_file": "Cloud Storage URL for Target Voice, optional URL"</code></pre>
+            <pre data-prefix="6" class="text-success"><code>&#10101;</code></pre>
+            <pre data-prefix="7" class="text-success"><code>fetch("https://metavoicexyz--tts-app.modal.run", &#10100;</code></pre>
+            <pre data-prefix="8"><code></code>    method: "POST",</pre>
+            <pre data-prefix="9"><code></code>    headers: &#10100;</pre>
+            <pre data-prefix="10"><code></code>        "Content-Type": "application/json",</pre>
+            <pre data-prefix="11" class="text"><code>    &#10101;</code></pre>
+            <pre data-prefix="12"><code></code>    body: JSON.stringify(data),</pre>
+            <pre data-prefix="13" class="text-success"><code>&#10101;)</code></pre>
+            <pre data-prefix="14" ><code>    .then(response => response.json())</code></pre>
+            <pre data-prefix="15" ><code>    .then(data => &#10100;</code></pre>
+            <pre data-prefix="16"><code>        consol.log("Sucess: ", data);</code></pre>
+            <pre data-prefix="17"><code>    &#10101;)</code></pre>
+            <pre data-prefix="18" ><code>    .catch((error) => &#10100;</code></pre>
+            <pre data-prefix="19"><code>        consol.error("Error: ", error);</code></pre>
+            <pre data-prefix="20"><code>&#10101;);</code></pre>
+        
         </div>
 
 
@@ -126,9 +144,12 @@
               </div> -->
 
               <div class="mockup-code w-3/2 mx-auto">
-                <pre data-prefix="$"><code>npm i daisyui</code></pre> 
-                <pre data-prefix=">" class="text-warning"><code>installing...</code></pre> 
-                <pre data-prefix=">" class="text-success"><code>Done!</code></pre>
+                <pre data-prefix="1" class="text-success"><code>curl -H 'Content-Type: application/json' \</code></pre> 
+                <pre data-prefix="2"><code>    -d '&#10100;"api_key": "API key", "text": "Text", "voices":  \</code></pre>
+                <pre data-prefix="3"><code>    "Voice name",  "target_file": "URL" &#10101;' \</code></pre>
+                <pre data-prefix="4"><code>    -X POST \</code></pre>
+                <pre data-prefix="5"><code>    https://metavoicexyz--tts-app.modal.run</code></pre>
+            
             </div>
             
           </div>
