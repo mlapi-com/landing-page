@@ -9,15 +9,15 @@ const menuitems = [
   //   title: "Models",
   //   path: "/models"
   // },
-  {
-    title: "Use Cases",
-    path: "#",
-    children: [
-      { title: "ChatGPT", path: "#" },
-      { title: "Dataset Generation", path: "#" },
-      { title: "E-Learning", path: "#" },
-    ],
-  },
+  // {
+  //   title: "Use Cases",
+  //   path: "#",
+  //   children: [
+  //     { title: "ChatGPT", path: "#" },
+  //     { title: "Dataset Generation", path: "#" },
+  //     { title: "E-Learning", path: "#" },
+  //   ],
+  // },
   {
     title: "Pricing",
     path: "/pricing",
@@ -42,7 +42,7 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-extrabold text-slate-800 text-4xl">Voicees🗣️</span><span
+          ><span class="font-extrabold text-slate-800 text-3xl">Voicees🗣️</span><span
             class="text-slate-500"></span
           >
         </a>
@@ -51,7 +51,7 @@ const menuitems = [
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-3">
+        <ul class="flex flex-col lg:flex-row lg:gap-2">
           {
             menuitems.map((item, index) => (
               <>
@@ -67,7 +67,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+                      class="flex lg:px-3  text-gray-600 hover:text-gray-900">
                       {item.title}
                     </a>
                   </li>
