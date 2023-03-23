@@ -1,0 +1,87 @@
+<!-- 
+    # How to add new FQA and what aer the classes that we need to change?
+        To add new FAQ, copy First FAQ and paste it at a place you want to add new FAQ. 
+            1. First chnage the name of the id in h2, ref: line no 24
+            2. chnage the data-accordion-target in the button tag below the h2
+            3. Also chnage the aria-controls in the same tag
+            4. Now chnage the id in div tag ref: line no 30
+            5. Also chane the aria-labelledby in the same tag
+        Overall you need to change 5 values in order to make that FAQ work again.
+
+
+
+ -->
+
+
+<div class="grid grid-cols-1 m-auto p-24 justify-center max-w-screen-lg">
+    <h2 class="pb-4 text-center text-5xl font-bold mb-20">Frequently Asked Questions</h2>
+
+    <div id="accordion-flush" data-accordion="collapse" data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white" data-inactive-classes="text-gray-500 dark:text-gray-400">
+        
+
+        <!-- First FAQ -->
+
+        <h2 id="accordion-flush-heading-1">
+        <button type="button" class="flex items-center text-xl justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-1" aria-expanded="true" aria-controls="accordion-flush-body-1">
+            <span>Can I use Voicees for free?</span>
+            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
+        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, we give 1 Hour free API credit. After that you only pay for what you use. Currently we charge $0.0013 /sec.</p>
+            <!-- <p class="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" class="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> -->
+        </div>
+        </div>
+
+        <h2 id="accordion-flush-heading-2">
+        <button type="button" class="flex items-center text-xl justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-2" aria-expanded="false" aria-controls="accordion-flush-body-2">
+            <span>How long does it takes to Clone my voice?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
+        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Voicees Text-to-Speech engine is real time in most cases. It takes a couple of minutes to convert the input text into audio.</p>
+            <!-- <p class="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p> -->
+        </div>
+        </div>
+
+        <h2 id="accordion-flush-heading-3">
+        <button type="button" class="flex items-center justify-between text-xl w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-3" aria-expanded="false" aria-controls="accordion-flush-body-3">
+            <span>How long should be the custom voice audio file?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
+        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Custom voice audio to clone you own voice can be as small as 10 sec, the larger the audio the better the cloned audio will sound.</p>
+        </div>
+        </div>
+
+        <h2 id="accordion-flush-heading-4">
+        <button type="button" class="flex items-center justify-between text-xl w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-4" aria-expanded="false" aria-controls="accordion-flush-body-4">
+            <span>Does Voicees have commercial distribution rights?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-4" class="hidden" aria-labelledby="accordion-flush-heading-4">
+        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Yes, all our paid plans have commercial distribution rights - all audio created on Voicees is owned by the creator/account owner.</p>
+        </div>
+        </div>
+
+        <h2 id="accordion-flush-heading-5">
+        <button type="button" class="flex items-center justify-between text-xl w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400" data-accordion-target="#accordion-flush-body-5" aria-expanded="false" aria-controls="accordion-flush-body-5">
+            <span>Can I cancel any time?</span>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </h2>
+        <div id="accordion-flush-body-5" class="hidden" aria-labelledby="accordion-flush-heading-5">
+        <div class="py-5 font-light border-b border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">Yes. If you want to cancel your plan, simply go to your profile and cancel in the account page.</p>
+        </div>
+        </div>
+    </div>
+    
+</div>
