@@ -5,10 +5,14 @@ import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
 
 const menuitems = [
-  // {
-  //   title: "Models",
-  //   path: "/models"
-  // },
+  {
+    title: "Why Email Api?",
+    path: "/why-email-api"
+  },
+  {
+    title: "Changlog",
+    path: "/changlog"
+  },
   // {
   //   title: "Use Cases",
   //   path: "#",
@@ -18,22 +22,22 @@ const menuitems = [
   //     { title: "E-Learning", path: "#" },
   //   ],
   // },
-  {
-    title: "Pricing",
-    path: "/pricing",
-  },
+  // {
+  //   title: "Pricing",
+  //   path: "/pricing",
+  // },
   // {
   //   title: "About",
   //   path: "/about",
   // },
-  {
-    title: "Docs",
-    path: "/",
-  },
-  {
-    title: "Blog",
-    path: "/blog",
-  },
+  // {
+  //   title: "Docs",
+  //   path: "/",
+  // },
+  // {
+  //   title: "Blog",
+  //   path: "/blog",
+  // },
   // {
   //   title: "Contact",
   //   path: "/contact",
@@ -46,7 +50,7 @@ const menuitems = [
     <Astronav>
       <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="text-lg"
-          ><span class="font-extrabold text-slate-800 text-3xl">Txtai 📝</span><span
+          ><span class="font-extrabold text-slate-800 text-3xl">Email 📬 Api </span><span
             class="text-slate-500"></span
           >
         </a>
@@ -55,7 +59,7 @@ const menuitems = [
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-2">
+        <ul class="flex flex-col lg:flex-row lg:gap-1 ml-96">
           {
             menuitems.map((item, index) => (
               <>
@@ -71,7 +75,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3  text-gray-600 hover:text-gray-900">
+                      class="flex-1 lg:px-1 underline text-blue-600 hover:text-black">
                       {item.title}
                     </a>
                   </li>
@@ -93,7 +97,7 @@ const menuitems = [
           href="https://dashboard.visionapi.space/" 
           size="md" 
           class=" justify-center inline-flex items-center gap-2 rounded-full py-3 px-6 text-white font-medium hover:bg-violet-600">
-          Get started for free
+          Cooming Soon
         </Link>
       </div>
     </div>
